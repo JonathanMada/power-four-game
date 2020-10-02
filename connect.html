@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Connet Four Game</title>
+    <script
+      src="http://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="mycss\connectStyle.css">
+    <link rel="stylesheet" href="mycss\popup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- This is my popup -->
+      <div class="popup" id="popit">
+        <div class="overlay"></div>
+        <div id="myContent" class="content">
+            <h1 style="font-size: 1.6rem;">Welcome to Connect Four</h1>
+            <form onsubmit="return false" class="mt-4" >
+              <div class="form-group">
+                <label for="myInput">Player 1</label>
+                <input type="text" class="form-control" id="player_1" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="myInput">Player 2</label>
+                <input type="text" class="form-control" id="player_2" placeholder="Enter your name">
+              </div>
+              <button type="button" class="btn btn-success" id="inplay">Start Connect 4</button>
+            </form>
+        </div>
+      </div>
+      <!-- #END - The popup end -->
+
+      <!-- This is my popup -->
+      <div class="row">
+        <div class="col-6 mx-auto py-2">
+          <div class="jumbotron mb-0 py-2">
+            <div class="text-center">
+              <h1 class="title display-4"><strong class="text-success">Project </strong>{Connect 4}</h1>
+              <hr class="my-4 bg-dark">
+              <p class="text-secondary">Welcome to your connect four projet!</p>
+              <button class="btn btn-outline-secondary" type="button" name="button" onclick="location.reload()">Restart</button>
+              <button id="" class="btn player">Player</button>
+              <button class="replay btn btn-outline-secondary" type="button" name="button" onclick="replay()">Replay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #END - The jumbotron -->
+
+      <!-- the table & its cells -->
+      <div class="row">
+        <div class="col-8 m-auto">
+          <table>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- #END - the table & its cells -->
+
+    </div>
+    <script src="myscript\board.js"></script>
+    <script src="myscript\myutilities.js"></script>
+    <script src="myscript\connectFour.js"></script>
+  </body>
+</html>

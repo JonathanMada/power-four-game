@@ -1,0 +1,48 @@
+.btn {
+  border: 0px !important;
+  font-family: 'Montserrat' !important;
+}
+
+.title {
+  font-size: 2.5rem !important;
+}
+
+table {
+  width: 490px !important;
+  height: 420px !important;
+  margin: auto !important;
+  border: 0px !important;
+  border-collapse: separate !important;
+}
+
+td {
+  width: 45px !important;
+  height: 45px !important;
+  border: 2px solid #ccc;
+  border-radius: 50% !important;
+  padding: 0px !important;
+}
+
+#blueNow {
+  width: 150px !important;
+  border: 2px solid #0081a7 !important;
+  border-radius: 5% ;
+  color: #0081a7 !important;
+}
+
+#redNow {
+  width: 150px !important;
+  border: 2px solid #ef233c !important;
+  border-radius: 5% ;
+  color: #ef233c !important;
+}
+
+.blueClick {
+  background-color: #457b9d !important;
+  border-color: #1d3557 !important;
+}
+
+.redClick {
+  background-color: #e63946 !important;
+  border-color: #6a040f !important;
+}
